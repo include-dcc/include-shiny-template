@@ -9,10 +9,11 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    mod_hello_world_ui("hello_world_1")
-    # fluidPage(
+
+    fluidPage(
+      mod_hello_world_ui("hello_world_1")
     #   h1("includeshinytemplate"),
-    # )
+    )
   )
 }
 
