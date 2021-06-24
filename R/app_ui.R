@@ -9,9 +9,10 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    fluidPage(
-      h1("includeshinytemplate")
-    )
+    mod_hello_world_ui("hello_world_1")
+    # fluidPage(
+    #   h1("includeshinytemplate"),
+    # )
   )
 }
 
@@ -24,11 +25,11 @@ app_ui <- function(request) {
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
 #' @noRd
 golem_add_external_resources <- function(){
-  
+
   add_resource_path(
     'www', app_sys('app/www')
   )
- 
+
   tags$head(
     favicon(),
     bundle_resources(
