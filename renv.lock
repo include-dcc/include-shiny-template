@@ -242,10 +242,10 @@
     },
     "htmltools": {
       "Package": "htmltools",
-      "Version": "0.5.0",
+      "Version": "0.5.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "7d651b7131794fe007b1ad6f21aaa401"
+      "Hash": "af2c2531e55df5cf230c4b5444fc973c"
     },
     "htmlwidgets": {
       "Package": "htmlwidgets",
@@ -271,8 +271,10 @@
     "includeshinytemplate": {
       "Package": "includeshinytemplate",
       "Version": "0.0.0.9000",
-      "Source": "unknown",
-      "Hash": "0b7b0b5f0625297a45f2ca7858cc031b"
+      "Source": "Local",
+      "RemoteType": "local",
+      "RemoteUrl": "/Users/tyu/sage/include-shiny-template",
+      "Hash": "f57676bfd4feaa18bb68af5fda6febee"
     },
     "ini": {
       "Package": "ini",
