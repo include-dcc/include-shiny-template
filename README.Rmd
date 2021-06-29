@@ -24,6 +24,7 @@ shiny applications and contains the most basic golem shiny application
 structure.  Here were the steps that went into creating this repository.
 
 1. Create Golem Shiny App: `golem::create_golem()` as documented [here](https://engineering-shiny.org/setting-up-for-success.html#create-a-golem)
+1. Utilize [renv](https://engineering-shiny.org/build-yourself-safety-net.html#renv) to set up your R environment
 1. Create readme: `devtools::build_readme()`
 
 

@@ -15,7 +15,10 @@ structure. Here were the steps that went into creating this repository.
 
 1.  Create Golem Shiny App: `golem::create_golem()` as documented
     [here](https://engineering-shiny.org/setting-up-for-success.html#create-a-golem)
-2.  Create readme: `devtools::build_readme()`
+2.  Utilize
+    [renv](https://engineering-shiny.org/build-yourself-safety-net.html#renv)
+    to set up your R environment
+3.  Create readme: `devtools::build_readme()`
 
 ## Installation
 
