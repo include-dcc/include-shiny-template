@@ -18,7 +18,25 @@ structure. Here were the steps that went into creating this repository.
 2.  Utilize
     [renv](https://engineering-shiny.org/build-yourself-safety-net.html#renv)
     to set up your R environment
-3.  Create readme: `devtools::build_readme()`
+3.  Update readme by modifying README.Rmd (not README.md):
+
+<!-- end list -->
+
+    devtools::build_readme()
+
+1.  Add golem modules. More information
+    [here](https://engineering-shiny.org/build-app-golem.html#submodules-and-utility-functions)
+
+<!-- end list -->
+
+    golem::add_module( name = "hello_world" )
+
+1.  Add tests. More information
+    [here](https://engineering-shiny.org/build-app-golem.html#add-tests)
+
+<!-- end list -->
+
+    usethis::use_test( "app" )
 
 ## Installation
 
