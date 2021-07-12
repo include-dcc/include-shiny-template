@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages('remotes')
+          install.packages(c('remotes', 'rcmdcheck'))
           remotes::install_local(upgrade="never")
         shell: Rscript {0}
 
