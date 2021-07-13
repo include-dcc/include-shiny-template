@@ -43,29 +43,25 @@ library(includeshinytemplate)
 
 1.  Create Golem Shiny App: `golem::create_golem()` as documented
     [here](https://engineering-shiny.org/setting-up-for-success.html#create-a-golem)
+
 2.  Utilize
     [renv](https://engineering-shiny.org/build-yourself-safety-net.html#renv)
     to set up your R environment
+
 3.  Update readme by modifying README.Rmd (not README.md):
+    
+        devtools::build_readme()
 
-<!-- end list -->
-
-    devtools::build_readme()
-
-1.  Add golem modules. More information
+4.  Add golem modules. More information
     [here](https://engineering-shiny.org/build-app-golem.html#submodules-and-utility-functions)
+    
+        golem::add_module( name = "hello_world" )
 
-<!-- end list -->
-
-    golem::add_module( name = "hello_world" )
-
-1.  Add tests. More information
+5.  Add tests. More information
     [here](https://engineering-shiny.org/build-app-golem.html#add-tests)
+    
+        usethis::use_test( "app" )
 
-<!-- end list -->
-
-    usethis::use_test( "app" )
-
-1.  Need to use Python? Use
+6.  Need to use Python? Use
     [reticulate](https://rstudio.github.io/reticulate/) Be sure to use
     either `conda` or `pipenv` to manage your Python dependencies.
