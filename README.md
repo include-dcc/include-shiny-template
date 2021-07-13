@@ -38,6 +38,10 @@ structure. Here were the steps that went into creating this repository.
 
     usethis::use_test( "app" )
 
+1.  Need to use Python? Use
+    [reticulate](https://rstudio.github.io/reticulate/) Be sure to use
+    either `conda` or `pipenv` to manage your Python dependencies.
+
 ## Installation
 
 You can install the released version of includeshinytemplate from
