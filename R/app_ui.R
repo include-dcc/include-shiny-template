@@ -5,6 +5,7 @@
 #' @import shiny
 #' @noRd
 app_ui <- function(request) {
+
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
@@ -12,7 +13,6 @@ app_ui <- function(request) {
 
     fluidPage(
       mod_hello_world_ui("hello_world_1")
-    #   h1("includeshinytemplate"),
     )
   )
 }
