@@ -41,6 +41,13 @@ library(includeshinytemplate)
 
 ## Developmental Guide
 
+In this shiny application template we try to follow the guidelines
+described by Engineering Production-Grade Shiny Apps:
+<https://engineering-shiny.org/index.html>. In particular we utilize
+tools such as `golem` and `renv` to build our shiny application. The
+steps described below can all be found in more detail in the shiny
+engineering link above.
+
 1.  Create Golem Shiny App: `golem::create_golem()` as documented
     [here](https://engineering-shiny.org/setting-up-for-success.html#create-a-golem)
 
@@ -52,7 +59,9 @@ library(includeshinytemplate)
     
         devtools::build_readme()
 
-4.  Add golem modules. More information
+4.  Add golem modules. You will most likely want to remove
+    `mod_hello_world.R` and add your own golem module. Be sure to add to
+    `app_ui.R` and `app_ui.R` to use your module. More information
     [here](https://engineering-shiny.org/build-app-golem.html#submodules-and-utility-functions)
     
         golem::add_module( name = "hello_world" )
