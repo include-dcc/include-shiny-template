@@ -69,6 +69,7 @@ jobs:
     needs: [test]
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v2
       - name: upload directory
         uses: include-dcc/cavatica-upload-action@v0.0.2
         with:
