@@ -64,3 +64,14 @@ jobs:
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
+
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-18.04
+    steps:
+      - name: upload directory
+        uses: include-dcc/cavatica-upload-action@v0.0.2
+        with:
+          auth_token: ${{ secrets.CAVATICA_AUTH_TOKEN }}
+          project_name: Test
+          path: "./"
