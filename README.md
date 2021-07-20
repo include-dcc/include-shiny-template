@@ -74,3 +74,13 @@ engineering link above.
 6.  Need to use Python? Use
     [reticulate](https://rstudio.github.io/reticulate/) Be sure to use
     either `conda` or `pipenv` to manage your Python dependencies.
+
+7.  The CI/CD for this repository is done through github actions and
+    consists of 3 major steps. The file is located at
+    .github/workflows/ci.yaml
+    
+      - test: Testing of the shiny package
+      - docker: This section is commented out ci.yaml but you can choose
+        to un-comment it out if you want to use this.
+      - deploy: Upload this to CAVATICA project so it can be used in
+        data cruncher.
