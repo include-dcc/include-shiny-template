@@ -47,6 +47,18 @@ library(includeshinytemplate)
 ```
 
 
+## Using this template
+
+1. After copying this template, these are the files that must be updated with your repository name
+
+    - README.Rmd
+    - docker-compose.yml
+    - CONTRIBUTING.md
+    - dev/01_start.R
+    - dev/02_dev.R
+
+2. If you want to push this shiny application to CAVATICA, add a github secret with your CAVATICA_AUTH_TOKEN. Make sure you also create a CAVATICA project. Comment the `deploy` section of the `.github/workflows/ci.yaml`.
+
 ## Developmental Guide
 
 In this shiny application template we try to follow the guidelines described by Engineering Production-Grade Shiny Apps: https://engineering-shiny.org/index.html.  In particular we utilize tools such as `golem` and `renv` to build our shiny application.  The steps described below can all be found in more detail in  the shiny engineering link above.
