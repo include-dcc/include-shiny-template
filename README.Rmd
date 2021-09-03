@@ -49,15 +49,15 @@ library(includeshinytemplate)
 
 ## Using this template
 
-1. After copying this template, these are the files that must be updated with your repository name
+1. After copying this template, these are the files that must be updated with your repository name.
 
     - README.Rmd
     - docker-compose.yml
     - CONTRIBUTING.md
     - dev/01_start.R
     - dev/02_dev.R
+1. If you want to push this shiny application to CAVATICA, add a github secret with your CAVATICA_AUTH_TOKEN. Make sure you also create a CAVATICA project. Comment the `deploy` section of the `.github/workflows/ci.yaml`.
 
-2. If you want to push this shiny application to CAVATICA, add a github secret with your CAVATICA_AUTH_TOKEN. Make sure you also create a CAVATICA project. Comment the `deploy` section of the `.github/workflows/ci.yaml`.
 
 ## Developmental Guide
 

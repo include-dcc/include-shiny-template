@@ -41,7 +41,7 @@ library(includeshinytemplate)
 ## Using this template
 
 1.  After copying this template, these are the files that must be
-    updated with your repository name
+    updated with your repository name.
 
     -   README.Rmd
     -   docker-compose.yml
