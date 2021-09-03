@@ -49,7 +49,10 @@ library(includeshinytemplate)
     -   dev/01_start.R
     -   dev/02_dev.R
 
-2.  If you want to push this shiny application to CAVATICA, add a github
+2.  After updating these files, please make sure to run the functions in
+    `dev/01_start.R` to update this repository.
+
+3.  If you want to push this shiny application to CAVATICA, add a github
     secret with your CAVATICA_AUTH_TOKEN. Make sure you also create a
     CAVATICA project. Comment the `deploy` section of the
     `.github/workflows/ci.yaml`.
